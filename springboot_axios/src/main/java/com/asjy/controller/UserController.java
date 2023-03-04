@@ -40,6 +40,7 @@ public class UserController {
         System.out.println("hot-fix 第二次修改 冲突问题-----------");
         System.out.println("push test");
          System.out.println("GitHub update-----------");
+        System.out.println("远程代码改动--------");
         return R.success(list) ;
     }
 
