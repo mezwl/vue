@@ -33,6 +33,7 @@ public class UserController {
         List<User> list = userService.list();
         System.out.println("11111");
         System.out.println(2222);
+        System.out.println(3333);
         return R.success(list) ;
     }
 
