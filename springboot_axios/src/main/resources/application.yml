@@ -1,0 +1,32 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      #差八个小时，用此配置解决
+      url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2b8&rewriteBatchedStatements=true
+      username: root
+      password: root
+
+  redis:
+    host: 192.168.254.36
+    port: 6379
+    password: 123321
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: 100ms
+
+mybatis-plus:
+  configuration:
+    #开启Mp 日志  可在控制台显示出sql语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #在映射实体或者属性时，将数据库中表明和字段名中的下划线去掉，按照驼峰命名法进行映射
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: tb_
