@@ -32,6 +32,7 @@ public class UserController {
     public R selectAll(){
         List<User> list = userService.list();
         System.out.println("11111");
+        System.out.println(2222);
         return R.success(list) ;
     }
 
