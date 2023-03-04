@@ -39,6 +39,7 @@ public class UserController {
         System.out.println("merge 修改 合并冲突问题-------------");
         System.out.println("hot-fix 第二次修改 冲突问题-----------");
         System.out.println("push test");
+         System.out.println("GitHub update-----------");
         return R.success(list) ;
     }
 
