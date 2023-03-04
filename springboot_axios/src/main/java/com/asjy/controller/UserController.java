@@ -31,6 +31,7 @@ public class UserController {
     @GetMapping
     public R selectAll(){
         List<User> list = userService.list();
+        System.out.println("11111");
         return R.success(list) ;
     }
 
