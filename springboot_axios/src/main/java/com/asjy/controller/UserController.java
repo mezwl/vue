@@ -43,6 +43,7 @@ public class UserController {
         System.out.println("本地代码改动----------");
          System.out.println("GitHub update-----------");
         System.out.println("远程代码改动--------");
+        System.out.println("本地代码再次改动------");
         return R.success(list) ;
     }
 
